@@ -1,0 +1,32 @@
+POST localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "name": "novin",
+  "email": "novin@test.com",
+  "password": "novinnovin"
+}
+
+###
+POST localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "novin@test.com",
+  "password": "novinnovin"
+}
+
+###
+GET localhost:3000/user/3/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vdmluQHRlc3QuY29tIiwic3ViIjp7Im5hbWUiOiJub3ZpbiJ9LCJpYXQiOjE3MDY1MjEwNzQsImV4cCI6MTcwNjUyNDY3NH0.1pLg4rk-LG70DuKz2MBN_KLgwrTupvalTJwIFQvd1bo
+
+###
+PUT localhost:3000/user/1
+Content-Type: application/json
+
+{
+  "name": "novinimut",
+  "email": "novin@test.com",
+  "password": "novinnovin"
+}
+
